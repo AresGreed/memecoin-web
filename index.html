@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords"
+  content="AWeb, Augustas Web, Augustas Websites, August Websites, website design, website development, web design agency, web development agency, custom websites, professional website design, responsive web design, e-commerce website design, business websites, digital agency, custom web solutions, website redesign, small business websites, SEO-friendly websites, affordable website design, custom web development for small businesses, responsive website development, web design for startups, SEO-friendly web design services, UX/UI design, corporate website design solutions, personalized website design agency, fast-loading websites, website designer, mobile-friendly websites, branding and website design">
+
+  <meta name="author" content="Made by AWeb">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Titles -->
+  <meta name="title" content="AWeb">
+  <meta property="og:title" content="AWeb">
+  <meta name="twitter:title" content="AWeb">
+  <title>Memecoin Sprout</title>
+
+  <!-- Descriptions -->
+  <meta name="description" content="The website is in development">
+  <meta property="og:description" content="The website is in development">
+  <meta name="twitter:description" content="The website is in development">
+
+  <!-- Image Links -->
+  <meta property="og:image" content="https://augustas.co/image-domain">
+  <meta name="twitter:card" content="https://augustas.co/image-domain">
+  <meta name="twitter:image" content="https://augustas.co/image-domain">
+
+  <!-- Domain Links -->
+  <meta property="og:url" content="https://augustas.co">
+  <link rel="alternate" href="https://augustas.co" hreflang="en">
+  <link rel="canonical" href="https://augustas.co">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" src="favicon.ico">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  
+  <div class="w-[100vw] h-[100vh] flex !justify-center items-center relative z-20">
+
+    <img src="PEPE.webp" alt="coin" class="floating-coin absolute z-10 left-[5vw] top-[20vh] w-auto h-[160px] max-[1326px]:!top-[12vh] max-[680px]:h-[100px] max-[680px]:!top-[5vh]">
+    <img src="HAROLD.webp" alt="coin" class="floating-coin absolute z-10 right-[5vw] top-[40vh] w-auto h-[160px] max-[1326px]:!top-[18vh] max-[680px]:h-[100px] max-[680px]:!top-[40vh] max-[680px]:!right-[-3vh]">
+    <img src="DRPEPE.webp" alt="coin" class="floating-coin absolute z-10 right-[40vw] top-[72vh] w-auto h-[160px] max-[680px]:h-[100px] max-[680px]:!top-[84vh]">
+
+    <div class="card-main w-fit bg-black/60 border border-white/20 h-[440px] z-20 p-8 rounded-[32px] flex justify-between gap-8 backdrop-blur-[10px] !m-8 max-[964px]:flex-col max-[964px]:h-fit max-[964px]:w-fit max-[964px]:!m-6 max-[964px]:!p-5 relative">
+
+
+      <div class="flex flex-col justify-between h-full flex flex-col max-[964px]:items-center">
+
+        <div class="max-[964px]:w-full max-[964px]:text-center flex flex-col max-[964px]:items-center">
+          <p class="text-[42px] text-white font-bold leading-[120%] tracking-[-1px] max-w-[430px] mb-3 max-[1200px]:text-[36px] max-[450px]:text-[30px]">
+            Get your memecoin to Millions and beyond
+          </p>
+          <p class="text-[23px] text-[#CCCFCD] leading-[130%] max-w-[400px] !font-light max-[1200px]:text-[20px] max-[964px]:mb-6 max-[450px]:text-[16px]">
+            We took 2 memecoins in 1 month from 0 to 30+ Million dollar marketcap without spending 100k+ on marketing
+          </p>
+        </div>
+
+        <div class="bg-white pr-5 pl-5 pt-4 pb-4 w-fit rounded-[17px] cursor-pointer hover:opacity-80 transition-all duration-700 ease-out max-[450px]:pt-3 max-[450px]:pb-3 max-[450px]:pr-4 max-[450px]:pl-4">
+          <p class="text-[24px] text-black font-inter font-normal leading-[96%] max-[1200px]:text-[18px] text-center">
+            Book a <span class="font-bold">FREE</span> consultation now
+          </p>
+        </div>
+
+      </div>
+
+      <div id="video-thumbnail" class="w-fit h-full relative cursor-pointer hover:opacity-80 transition-all duration-700 ease-out overflow-hidden rounded-[20px]" onclick="playVideo()">
+        <img id="thumbnail" src="thumbnail.webp" alt="thumbnail" class="h-full w-full max-w-[600px] object-cover">
+        <img src="play.svg" alt="play" class="w-[75px] h-[75px] absolute bottom-4 left-4 max-[450px]:h-[55px] max-[450px]:w-[55px]">
+
+        <iframe id="youtube-video" class="absolute top-0 left-0 w-full h-full hidden" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="background">
+    <img src="logo.svg" alt="bg-logo" class="w-[1200px] fixed bottom-[-50px] z-10 left-1/2 -translate-x-1/2 opacity-20">
+    <div class="w-[1394px] h-[327px] flex-shrink-0 rounded-[1394px] bg-[#009B51] blur-[300px] fixed bottom-[-300px] left-1/2 -translate-x-1/2"></div>
+  </div>
+
+  <script>
+
+
+gsap.set(".floating-coin", { y: 100, opacity: 0 }); // Start position (below)
+  gsap.set(".card-main", { y: 70, opacity: 0 }); // Start position for the container
+  gsap.set(".background", { opacity: 0 }); // Start position for the container
+
+
+  gsap.to(".floating-coin", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.13, // Delay between each coi
+  });
+
+  gsap.to(".card-main", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+    delay: 0.1, // Appears after the coins start
+  });
+
+  gsap.to(".background", {
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+  });
+
+    function playVideo() {
+      document.getElementById("thumbnail").style.opacity = "0";
+      document.querySelector("img[src='play.svg']").style.opacity = "0";
+
+      const videoIframe = document.getElementById("youtube-video");
+
+      videoIframe.style.display = "block";
+      videoIframe.src = "https://www.youtube.com/embed/m25ppbdW5Kc?autoplay=1";
+    }
+
+    gsap.delayedCall(0.5, () => {
+  gsap.utils.toArray(".floating-coin").forEach((coin) => {
+    gsap.to(coin, {
+      y: gsap.utils.random(-50, -10), // Random upward movement
+      duration: gsap.utils.random(1.2, 1.5), // Random duration
+      repeat: -1,
+      yoyo: true,
+      ease: "power1.inOut",
+      delay: gsap.utils.random(0, 1), // Random delay to desynchronize animations
+    });
+  });
+});
+
+
+
+  </script>
+
+  <style>
+    html, body {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100vw;
+      min-height: 100vh;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    img,
+    video {
+      pointer-events: none;
+    }
+    
+    * {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: inherit;
+    }
+    
+    
+    input,
+    textarea,
+    button,
+    select,
+    a {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    a:focus,
+    a:visited,
+    a:active {
+      outline: none;
+    }
+    
+    img::selection {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    
+    ::selection {
+      background-color: rgba(0, 0, 0, 0);
+
+    }
+    
+    ::-moz-selection {
+      background-color: rgba(0, 0, 0, 0);
+
+    }
+  </style>
+
+</body>
+</html>
