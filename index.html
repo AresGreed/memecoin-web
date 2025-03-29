@@ -67,7 +67,7 @@
     <img src="HAROLD.webp" alt="coin" class="floating-coin absolute z-10 right-[5vw] top-[40vh] w-auto h-[160px] max-[1326px]:!top-[18vh] max-[680px]:h-[100px] max-[680px]:!top-[40vh] max-[680px]:!right-[-3vh]">
     <img src="DRPEPE.webp" alt="coin" class="floating-coin absolute z-10 right-[40vw] top-[72vh] w-auto h-[160px] max-[680px]:h-[100px] max-[680px]:!top-[84vh]">
 
-    <div class="card-main w-fit bg-black/60 border border-white/20 h-[440px] z-20 p-8 rounded-[32px] flex justify-between gap-8 backdrop-blur-[10px] !m-8 max-[964px]:flex-col max-[964px]:h-fit max-[964px]:w-fit max-[964px]:!m-6 max-[964px]:!p-5 relative">
+    <div class="card-main w-fit bg-black/60 border border-white/20 h-[440px] z-20 p-8 rounded-[32px] flex justify-between gap-4 backdrop-blur-[10px] !m-8 max-[964px]:flex-col max-[964px]:h-fit max-[964px]:w-fit max-[964px]:!m-6 max-[964px]:!p-5 relative">
 
 
       <div class="flex flex-col justify-between h-full flex flex-col max-[964px]:items-center">
@@ -76,12 +76,12 @@
           <p class="text-[42px] text-white font-bold leading-[120%] tracking-[-1px] max-w-[430px] mb-3 max-[1200px]:text-[36px] max-[450px]:text-[30px]">
             Get your memecoin to Millions and beyond
           </p>
-          <p class="text-[23px] text-[#DDDFDE] leading-[130%] max-w-[400px] !font-light max-[1200px]:text-[20px] max-[964px]:mb-6 max-[450px]:text-[18px]">
+          <p class="text-[23px] text-[#DDDFDE] leading-[130%] max-w-[400px] !font-light max-[1200px]:text-[20px] max-[450px]:text-[18px]">
             We took 2 memecoins in 1 month from <span class="text-green-400 text-[#009B51]">0 to 30+ Million dollar MC</span> without spending $100k+ on marketing.<br><br><span class="flex gap-2 items-center max-[964px]:justify-center max-[964px]:gap-1">Watch the video to learn how <img src="arrow.svg" alt="arrow" class="max-[964px]:rotate-90 h-full w-auto"></span>
           </p>
         </div>
 
-        <div data-cal-link="sprout-marketing/memecoin" data-cal-namespace="memecoin" data-cal-config='{"layout":"month_view"}' class="bg-white pr-5 pl-5 pt-4 pb-4 rounded-[17px] cursor-pointer hover:opacity-80 transition-all duration-700 ease-out max-[450px]:pt-3 max-[450px]:pb-3 max-[450px]:pr-4 max-[450px]:pl-4 w-full">
+        <div data-cal-link="sprout-marketing/memecoin" data-cal-namespace="memecoin" data-cal-config='{"layout":"month_view"}' class="bg-white pr-5 pl-5 pt-4 pb-4 rounded-[17px] cursor-pointer hover:opacity-80 transition-all duration-700 ease-out max-[450px]:pt-3 max-[450px]:pb-3 max-[450px]:pr-4 max-[450px]:pl-4 w-full max-[964px]:hidden">
           <p class="text-[24px] text-black font-inter font-normal leading-[96%] max-[1200px]:text-[18px] text-center">
             Book a <span class="font-bold">FREE</span> consultation now
           </p>
@@ -89,11 +89,17 @@
 
       </div>
 
-      <div id="video-thumbnail" class="w-fit h-full relative cursor-pointer hover:opacity-80 transition-all duration-700 ease-out overflow-hidden rounded-[20px]" onclick="playVideo()">
+      <div id="video-thumbnail" class="border border-white/10 w-fit h-full relative cursor-pointer hover:opacity-80 transition-all duration-700 ease-out overflow-hidden rounded-[20px]" onclick="playVideo()">
         <img id="thumbnail" src="thumbnail.webp" alt="thumbnail" class="h-full w-full max-w-[600px] object-cover">
         <img src="play.svg" alt="play" class="w-[75px] h-[75px] absolute bottom-4 left-4 max-[450px]:h-[55px] max-[450px]:w-[55px]">
 
         <iframe id="youtube-video" class="absolute top-0 left-0 w-full h-full hidden" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
+      <div data-cal-link="sprout-marketing/memecoin" data-cal-namespace="memecoin" data-cal-config='{"layout":"month_view"}' class="bg-white pr-5 pl-5 pt-4 pb-4 rounded-[17px] cursor-pointer hover:opacity-80 transition-all duration-700 ease-out max-[450px]:pt-3 max-[450px]:pb-3 max-[450px]:pr-4 max-[450px]:pl-4 w-full hidden max-[964px]:block">
+        <p class="text-[24px] text-black font-inter font-normal leading-[96%] max-[1200px]:text-[18px] text-center">
+          Book a <span class="font-bold">FREE</span> consultation now
+        </p>
       </div>
 
     </div>
